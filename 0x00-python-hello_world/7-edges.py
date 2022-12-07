@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+Prints letters in a variable.
+"""
 word = "Holberton"
 word_first_3 = word[:3]
 word_last_2 = word[-2:]

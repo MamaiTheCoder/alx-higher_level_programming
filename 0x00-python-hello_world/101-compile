@@ -1,2 +1,6 @@
 #!/bin/bash
+"""
+Compiles a Python script file.that will be stored in the environment variable $PYFILE.
+The output filename is $PYFILEc
+"""
 python3 -m compileall -b "$PYFILE"

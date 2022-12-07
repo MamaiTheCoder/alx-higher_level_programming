@@ -1,2 +1,4 @@
 #!/bin/bash
+#Runs Python code that will be saved in the environment variable $PYCODE
+#export PYCODE='print(f"Best School: {88+10}")' and ./1-run_inline
 python3 -c "$PYCODE"
