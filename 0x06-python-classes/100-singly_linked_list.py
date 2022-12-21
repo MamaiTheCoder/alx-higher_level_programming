@@ -36,7 +36,7 @@ class Node():
         """Private instance attribute that sets the data value of a node"""
         if self.__validate_data(value):
             self.__data = value
-    
+
     def __validate_data(self, data):
         """
         validates the data, checking its type
@@ -45,7 +45,7 @@ class Node():
         if isinstance(data, int):
             return True
         return False
-    
+
     def __validate_node(self, node):
         """
         validates the node, checking it's a node object
@@ -63,7 +63,7 @@ class SinglyLinkedList():
         """Private instance attribute that sets the necessary
         attributes for the SinglyLinkedList objects"""
         self.__head = None
-        
+
     def __str__(self):
         """
         used by print to print linked list
@@ -87,7 +87,7 @@ class SinglyLinkedList():
         if tmp is None:
             self.__head = Node(value)
             return
-        
+
         prev = None
         while tmp is not None:
             if (tmp.next_node is None or tmp.next_node.data >= value):
