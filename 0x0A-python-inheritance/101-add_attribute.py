@@ -11,6 +11,7 @@ def add_attribute(obj, name, value):
     Raises:
         TypeError: when the attribute can't be added
     """
-    if not hasattr(obj, "__dict__"):
+    if not hasattr(prmObject, "__dict__"):
         raise TypeError("can't add new attribute")
-    setattr(obj, name, value)
+    if (not hasattr(prmObject, prmName)):
+        prmObject.__setattr__(prmName, prmValue)
