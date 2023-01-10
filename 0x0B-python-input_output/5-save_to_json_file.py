@@ -16,5 +16,5 @@ def save_to_json_file(my_obj, filename):
     Raises
         Exception: when the file can be opened
     """
-    with open(Filename, 'w', encoding="utf-8") as f:
+    with open(filename, 'w', encoding="utf-8") as f:
         json.dump(my_obj, f)
