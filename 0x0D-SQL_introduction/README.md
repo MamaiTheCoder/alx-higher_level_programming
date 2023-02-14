@@ -62,7 +62,7 @@ $ sudo apt install mysql-server
 $ mysql --version
 mysql  Ver 8.0.28-0ubuntu0.20.04.3 for Linux on x86_64 ((Ubuntu))    
 ```
-# Connect to your MySQL server:
+## Connect to your MySQL server:
 ```
 $ sudo mysql
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -81,7 +81,7 @@ mysql> quit
 Bye 
 ```
 
-# Use “container-on-demand” to run MySQL
+## Use “container-on-demand” to run MySQL
 In the container, credentials are `root/root`
 * Ask for container Ubuntu 20.04
 * Connect via SSH
