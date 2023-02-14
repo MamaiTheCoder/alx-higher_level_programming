@@ -64,6 +64,7 @@ mysql  Ver 8.0.28-0ubuntu0.20.04.3 for Linux on x86_64 ((Ubuntu))
 ```
 # Connect to your MySQL server:
 ```
+$ sudo mysql
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 19
 Server version: 8.0.28-0ubuntu0.20.04.3 (Ubuntu)
