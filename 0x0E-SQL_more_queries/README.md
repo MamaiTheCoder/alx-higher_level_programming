@@ -134,7 +134,5 @@ $
 ```
 
 <p align="center">
-  <img src="https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/3/bc2575fee3303b731031.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230215%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230215T084231Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=9cc4ddc8cb13a4ed9612cdc48e2ae4d7c46d5f03ac9b21d278f69366af7d2e12"
-       alt="CHEATSHEET SQL JOINS"
-  >
+  <img src="https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/3/bc2575fee3303b731031.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230215%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230215T084231Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=9cc4ddc8cb13a4ed9612cdc48e2ae4d7c46d5f03ac9b21d278f69366af7d2e12" alt="CHEATSHEET SQL JOINS" >
 </p>
