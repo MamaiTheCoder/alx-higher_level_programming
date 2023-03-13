@@ -1,7 +1,7 @@
 #!/usr/bin/node
-
-exports.callMeMoby = function (x, thefunction) {
+// Executes theFunction 'x' times
+exports.callMeMoby = function (x, theFunction) {
   while (x-- > 0) {
-    thefunction();
+    theFunction();
   }
 };

@@ -1,13 +1,11 @@
 #!/usr/bin/node
-// import { argv } from 'node:process'
 
-const aboutC = 'C is fun';
-const firstArg = parseInt(process.argv[2]);
-
-if (process.argv[2] === undefined || isNaN(firstArg)) {
-  console.log('Missing number of occurrences');
+let printXt = parseInt(process.argv[2]);
+if (isNaN(printXt) || process.argv[2] === undefined) {
+  console.log('Missing number of occurences');
 } else {
-  for (let i = 0; i < firstArg; i++) {
-    console.log(aboutC);
+  while (printXt > 0) {
+    console.log('C is fun');
+    printXt--;
   }
 }
