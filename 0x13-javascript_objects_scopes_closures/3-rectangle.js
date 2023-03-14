@@ -1,6 +1,6 @@
 #!/usr/bin/node
 // A class Rectangle that defines a rectangle.
-module.exports = class Rectangle {
+class Rectangle {
   constructor(w, h) {
     // If w or h is equal to 0 or not a positive integer, create an empty object.
     if (typeof h === 'number' && typeof w === 'number' && h > 0 && w > 0) {
@@ -22,3 +22,5 @@ module.exports = class Rectangle {
     }
   }
 }
+
+module.export = Rectangle;
