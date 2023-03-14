@@ -16,4 +16,3 @@ if (isNaN(myInt)) {
 } else {
   console.log(factorial(myInt));
 }
-

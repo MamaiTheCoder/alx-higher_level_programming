@@ -9,4 +9,3 @@ if (isNaN(printXt) || process.argv[2] === undefined) {
     printXt--;
   }
 }
-

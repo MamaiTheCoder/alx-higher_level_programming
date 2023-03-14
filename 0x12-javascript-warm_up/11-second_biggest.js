@@ -11,4 +11,3 @@ if (process.argv.length < 4) {
   ints.sort(function (a, b) { return b - a; });
   console.log(ints[1]);
 }
-
