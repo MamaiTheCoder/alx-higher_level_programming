@@ -15,7 +15,6 @@ class Rectangle {
       for (; j < this.width; ++j) {
         process.stdout.write('X');
       }
-
       if (j === this.width) {
         console.log('');
       }
