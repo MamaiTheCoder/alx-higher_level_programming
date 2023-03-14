@@ -12,15 +12,13 @@ class Rectangle {
   print () {
     // Prints the rectangle using the character X.
     for (let i = 0; i < this.height; i++) {
-      let j = 0;
-      for (; j < this.width; ++j) {
-        process.stdout.write('X');
+      let s = '';
+      for (let j = 0; j < this.width; j++) {
+        s += 'X';
       }
-      if (j === this.width) {
-        console.log('');
-      }
+      console.log(s);
     }
   }
 }
 
-module.export = Rectangle;
+module.exports = Rectangle;
