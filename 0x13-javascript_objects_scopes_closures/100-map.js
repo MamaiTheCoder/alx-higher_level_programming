@@ -1,11 +1,11 @@
 #!/usr/bin/node
 // Imports an array and computes a new array.
 
-const array = require('./100-data.js').list;
+const oldList = require('./100-data.js').list;
 
-const newList = array.map((num, idx) => {
+const newList = oldList.map((num, idx) => {
   return num * idx;
 });
 
-console.log(array);
+console.log(oldList);
 console.log(newList);
