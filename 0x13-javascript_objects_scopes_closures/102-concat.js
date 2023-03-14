@@ -1,8 +1,8 @@
 #!/usr/bin/node
 // Concats 2 files
 const fs = require('fs');
+let content = '';
 
-const fArg = fs.readFileSync(process.argv[2].toString());
-const sArg = fs.readFileSync(process.argv[3].toString());
-
-fs.writeFileSync(process.argv[4], `${fArg}\n${sArg}`);
+content = content.concat(fs.readFileSync(process.argv[2]));
+content = content.concat(fs.readFileSync(process.argv[3]));
+fs.writeFileSync(process.argv[4], content);
