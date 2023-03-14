@@ -7,7 +7,8 @@ class Rectangle {
       this.height = h;
     }
   }
-  print() {
+
+  print () {
     // Prints the rectangle using the character X.
     for (let i = 0; i < this.height; i++) {
       let j = 0;
@@ -19,14 +20,16 @@ class Rectangle {
       }
     }
   }
-  rotate() {
+
+  rotate () {
     // Exchanges the width and the height of the rectangle.
     // [this.width, this.height] = [this.height, this.width];
-    let temp = this.width;
+    const temp = this.width;
     this.width = this.height;
     this.height = temp;
   }
-  double() {
+
+  double () {
     // Multiples the width and the height of the rectangle by 2.
     this.width *= 2;
     this.height *= 2;
