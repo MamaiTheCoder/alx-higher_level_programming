@@ -1,5 +1,5 @@
 #!/usr/bin/node
-
+// Computes and prints a factorial.
 function factorial (a) {
   if (a <= 0) {
     return 0;
@@ -16,3 +16,4 @@ if (isNaN(myInt)) {
 } else {
   console.log(factorial(myInt));
 }
+

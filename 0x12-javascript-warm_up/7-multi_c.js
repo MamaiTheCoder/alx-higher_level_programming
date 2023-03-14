@@ -1,5 +1,5 @@
 #!/usr/bin/node
-
+// Prints x times “C is fun”.
 let printXt = parseInt(process.argv[2]);
 if (isNaN(printXt) || process.argv[2] === undefined) {
   console.log('Missing number of occurences');
@@ -9,3 +9,4 @@ if (isNaN(printXt) || process.argv[2] === undefined) {
     printXt--;
   }
 }
+
