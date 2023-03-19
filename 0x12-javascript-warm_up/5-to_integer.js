@@ -6,4 +6,3 @@ if (process.argv[2] === undefined || isNaN(myVar)) {
 } else {
   console.log('My number: ' + myVar);
 }
-

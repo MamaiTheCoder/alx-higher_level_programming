@@ -8,4 +8,3 @@ if (process.argv.length < 4) {
 } else {
   console.log(add(parseInt(process.argv[2]), parseInt(process.argv[3])));
 }
-

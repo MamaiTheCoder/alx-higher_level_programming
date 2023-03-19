@@ -13,4 +13,3 @@ while (size > 0) {
   console.log(pstr);
   size--;
 }
-

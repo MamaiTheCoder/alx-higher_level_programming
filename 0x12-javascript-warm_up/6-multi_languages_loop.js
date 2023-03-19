@@ -7,4 +7,3 @@ while (idx < 3) {
   console.log(myStr[idx]);
   idx++;
 }
-
