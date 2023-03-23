@@ -22,8 +22,7 @@ if __name__ == '__main__':
     
     # Print the results in the desired format
     for row in results:
-        if row[1][0] == 'N':
-            print(row)
+        print(row)
     
     # Close the cursor and connection
     cur.close()
