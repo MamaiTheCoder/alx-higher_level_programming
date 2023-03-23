@@ -7,18 +7,31 @@ of hbtn_0e_0_usa where name matches the argument.
 """
 
 if __name__ == '__main__':
-    db = MySQLdb.connect(host="localhost", user=argv[1],
-                         port=3306, passwd=argv[2],
-                         db=argv[3])
+    # Connect to MySQL database
+    db = MySQLdb.connect(host='localhost',
+                         port=3306,
+                         user=sys.argv[1],
+                         passwd=sys.argv[2],
+                         db=sys.argv[3])
 
-    cur = db.cursor()
-    cur.execute("""
-                SELECT * 
-                FROM states
-                WHERE name LIKE BINARY '{}'
-                ORDER BY states.id ASC""".format(argv[4]))
+    # Prepare a cursor object using cursor() method
+    cursor = db.cursor()
 
-    rows = cur.fetchall()
+    # Prepare SQL query to fetch data from the states table
+    query = "SELECT * 
+             FROM states 
+             WHERE name LIKE BINARY '{}' 
+             ORDER BY id ASC".format(sys.argv[4])
 
-    for row in rows:
+    # Execute the SQL query
+    cursor.execute(query)
+
+    # Fetch all the rows in a list of lists.
+    results = cursor.fetchall()
+
+    # Print the results
+    for row in results:
         print(row)
+
+    # Disconnect from the database
+    db.close()
