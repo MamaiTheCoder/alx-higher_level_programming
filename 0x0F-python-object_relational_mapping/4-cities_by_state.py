@@ -1,23 +1,33 @@
 #!/usr/bin/python3
 import MySQLdb
+import sys
 """
 Lists all cities from the database hbtn_0e_4_usa
 """
-
 if __name__ == '__main__':
-    db = MySQLdb.connect(host='localhost',
-                         port=3306, user=argv[1],
-                         password=argv[2], db=argv[4])
-    with db.cursor() as cur:
-        cur.execute("""
-                    SELECT cities.id, cities.name, state.name
-                    From cities
-                    JOIN states
-                    ON cities.states_id = states.id
-                    ORDER BY cities.id ASC
-                    """)
-        row = cur.fetchall()
+    if len(sys.argv) != 4:
+        print("Usage: {} username password database".format(sys.argv[0]))
+        exit(1)
 
-    if row is not None:
-        for row in rows:
+    username, password, database = sys.argv[1:]
+
+    try:
+        db = MySQLdb.connect(
+            host="localhost",
+            user=username,
+            passwd=password,
+            db=database,
+            port=3306)
+
+        cur = db.cursor()
+        cur.execute("SELECT * FROM cities ORDER BY id ASC")
+
+        for row in cur.fetchall():
             print(row)
+
+    except MySQLdb.Error as e:
+        print("Error connecting to MySQL database: {}".format(e))
+        exit(1)
+
+    finally:
+        db.close()
